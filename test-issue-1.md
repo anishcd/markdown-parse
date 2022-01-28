@@ -1,1 +1,1 @@
-[link](google().com)
+(link.com)
