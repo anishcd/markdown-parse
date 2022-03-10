@@ -32,9 +32,7 @@ public class MarkdownParseTestLR4 {
     public void testSnippet3() throws IOException{
         ArrayList<String> testList = new ArrayList<>();
         String contents = Files.readString(Path.of("/Users/anishdevineni/Desktop/markdown-parse/lr-4-snippet-3.md"));
-        testList.add("https://www.twitter.com");
         testList.add("https://ucsd-cse15l-w22.github.io/");
-        testList.add("https://cse.ucsd.edu/");
         assertEquals(testList, MarkdownParse.getLinks(contents));
     }
 
@@ -62,9 +60,7 @@ public class MarkdownParseTestLR4 {
     public void testSnippet3Group() throws IOException{
         ArrayList<String> testList = new ArrayList<>();
         String contents = Files.readString(Path.of("/Users/anishdevineni/Desktop/markdown-parse/lr-4-snippet-3.md"));
-        testList.add("https://www.twitter.com");
         testList.add("https://ucsd-cse15l-w22.github.io/");
-        testList.add("https://cse.ucsd.edu/");
         assertEquals(testList, MarkdownParseGroup.getLinks(contents));
     }
 

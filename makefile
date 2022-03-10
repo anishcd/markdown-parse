@@ -6,3 +6,8 @@ MarkdownParse.class : MarkdownParse.java
  
 MarkdownParseTestLR4.class: MarkdownParseTestLR4.java MarkdownParse.class
 	javac -cp .:./lib/* MarkdownParseTestLR4.java
+
+CLASSPATH = lib/*:.
+
+TryCommonMark.class: TryCommonMark.java
+	javac -g -cp $(CLASSPATH) TryCommonMark.java
